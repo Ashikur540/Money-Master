@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="text-4xl font-bold text-sky-500 text-center  my-4">Money Master💰</h1>
+    <div class="container mx-auto border-2 flex justify-evenly  m-3 p-2">
+        <div class="left w-3/6">
+            <img src="./img.jpg" alt="" class="max-w-full h-[680px]">
+        </div>
+        <div class="right bg-gray-100 w-3/6 h-[680px] flex flex-col items-center">
+            <h1 class="text-lg font-semibold text-center my-4">Income</h1>
+
+            <div class="field m-4">
+                <label class="">Income: </label>
+                <input type="text" class="border-2 bg-slate-300" id="incomeBox">
+            </div>
+            <h1 class="text-lg font-semibold text-center mt-4 mb-2">Expenses</h1>
+            <div class="exp-fields flex flex-col justify-center items-center ">
+                <div class="field m-4">
+                    <label class="">Food: </label>
+                    <input type="text" class="border-2 bg-slate-300" id="food">
+                </div>
+                <div class="field m-4">
+                    <label class="">Rent: </label>
+                    <input type="text" class="border-2 bg-slate-300" id="rent">
+                </div>
+                <div class="field m-4">
+                    <label class="">Others: </label>
+                    <input type="text" class="border-2 bg-slate-300" id="others">
+                </div>
+            </div>
+            <button id="calculateBtn"
+                class="py-3 px-12 rounded-md bg-sky-600 text-center text-white shadow-md m-4">Calculate</button>
+            <h1 class="text-lg font-semibold text-center mt-2 mb-4 " id="toatalExp">Total Expenses :00</h1>
+            <h1 class="text-lg font-semibold text-center mt-4" id="balance">Balance : 00</h1>
+            <div class="savings flex justify-center items-center">
+                <label for="">Save:</label>
+                <input type="text" class="h-8  mx-3" id="savingsBx"> %
+                <button id="savingsCalculateBtn"
+                    class="py-2 px-8 rounded-md bg-sky-600 text-center text-white shadow-md m-4">Save</button>
+
+            </div>
+            <div class="final-status flex items-center justify-center">
+                <h1 class="text-lg font-semibold text-center " id="savedAmount">Savings Amount :5500</h1>
+                <h1 class="text-lg font-semibold text-center mx-4" id="remainingBlnc">Remaining Balance : 4500</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
